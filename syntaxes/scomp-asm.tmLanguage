@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>asm</string>
+	</array>
+	<key>name</key>
+	<string>SCOMP Assembly</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>;.*$</string>
+			<key>name</key>
+			<string>comment.line</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(ORG|EQU|DW)\b</string>
+			<key>name</key>
+			<string>support.type.asm</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:NOP|LOAD|STORE|ADD|SUB|JUMP|JNEG|JPOS|JZERO|AND|OR|XOR|SHIFT|ADDI|ILOAD|ISTORE|CALL|RETURN|IN|OUT|CLI|SEI|RETI|LOADI)\b</string>
+			<key>name</key>
+			<string>keyword.mnemonic.asm.scomp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b-?[0-9]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.dec</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>&(H|h)[0-9a-fA-F]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.hex</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>&(O|o)[0-8]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.oct</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>&(B|b)[01]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.bin</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.asm.scomp</string>
+	<key>uuid</key>
+	<string>7503c9da-6b20-41f8-9a3f-f9e2cfd9dde0</string>
+</dict>
+</plist>

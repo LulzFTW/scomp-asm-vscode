@@ -1,0 +1,43 @@
+{
+    "name": "scomp-asm",
+    "displayName": "SCOMP Assembly",
+    "description": "SCOMP Assembly support for Visual Studio Code",
+    "version": "1.0.0",
+    "icon": "logo.png",
+    "author": "LulzFTW",
+    "publisher": "LulzFTW",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "assembly",
+        "scomp",
+        "scasm",
+        "de2bot"
+    ],
+    "license": "ISC",
+    "contributes": {
+        "languages": [
+            {
+                "id": "scomp-asm",
+                "aliases": [
+                    "SCOMP Assembly"
+                ],
+                "extensions": [
+                    ".asm"
+                ],
+                "configuration": "./scomp-asm.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "scomp-asm",
+                "scopeName": "source.asm.scomp",
+                "path": "./syntaxes/scomp-asm.tmLanguage"
+            }
+        ]
+    }
+}
